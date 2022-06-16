@@ -1,6 +1,7 @@
 {
-  "*.ts": [
-    "eslint 'src/**' --fix",
+  "**/*.ts": [
+    "eslint --fix",
+    "prettier --write --ignore-unknown",
     "yarn test:staged",
     "git add"
   ]
